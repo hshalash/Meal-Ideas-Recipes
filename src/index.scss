@@ -1,0 +1,61 @@
+:root {
+  background-color: #fefae0;
+  color: #283618;
+
+}
+
+@font-face {
+  font-family: "Pacifico";
+  src: url("../src/assets/Fonts/Pacifico-Regular.ttf");
+}
+
+$primary-color: #e07a5f;
+$secondary-color: #b47038;
+
+.gradientText {
+  background: linear-gradient(to right, $primary-color, $secondary-color);
+  background-clip: text;
+  color: transparent;
+  display: inline-block;
+}
+
+.headerText {
+  font-family: "Pacifico", cursive;
+  font-size: 50px;
+}
+
+$container-max-widths: (
+  576px: 540px,
+  768px: 720px,
+  992px: 960px,
+  1200px: 1140px,
+);
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+  box-sizing: border-box;
+
+  @each $breakpoint, $max-width in $container-max-widths {
+    @media (min-width: $breakpoint) {
+      max-width: $max-width;
+    }
+  }
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.round20 {
+  border-radius: 10px;
+}
+.round100 {
+  border-radius: 100px;
+}
+
+.marginTop60 {
+  margin-top: 60px;
+}
