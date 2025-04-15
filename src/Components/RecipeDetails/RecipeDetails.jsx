@@ -66,8 +66,8 @@ export default function RecipeDetails() {
               </div>
               <p className="text-2xl font-bold mb-2">Directions</p>
 
-              <div className="w-full  py-5 bg-gray-50 shadow-md bg-opacity-10 rounded-lg px-16">
-                <span className="text-sm ">{meal?.strInstructions}</span>
+              <div className="py-5 bg-gray-50 shadow-md bg-opacity-10 rounded-lg px-16">
+                <span className="text-sm">{meal?.strInstructions}</span>
               </div>
             </div>
             <div className="socials flex items-center justify-center">

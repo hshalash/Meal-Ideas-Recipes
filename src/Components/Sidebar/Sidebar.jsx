@@ -1,6 +1,6 @@
 import photo from "../../assets/logo.png";
 import { MdOutlineFoodBank } from "react-icons/md";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -36,7 +36,9 @@ export default function Sidebar() {
           <div className="h-full px-3 py-4 overflow-y-auto bg-white ">
             <ul className="space-y-2 font-medium">
               <li>
-                <img src={photo} alt="" />
+                <Link to={"/"}>
+                  <img src={photo} alt="" />
+                </Link>
               </li>
               <li className="mt-16 bg-gray-100 rounded-lg">
                 <NavLink
